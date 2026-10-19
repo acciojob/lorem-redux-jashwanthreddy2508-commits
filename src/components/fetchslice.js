@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 
 
 export const fetchdata = createAsyncThunk('getdata', async () => {
-  const response = await fetch('https://jsonplaceholder.typicode.com/posts/1')
+  const response = await fetch('https://api.lorem.com/ipsum.')
   if (!response.ok) {
     throw new Error('Response failed')
   }
